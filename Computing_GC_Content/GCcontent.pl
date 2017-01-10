@@ -9,7 +9,7 @@ my $seq="";
 
 sub GCpercent(){
     $GC{$seq_name}=()=$seq=~ /[GC]/gi;
-    $GC{$seq_name}=$GC{$seq_name}/length($seq);
+    $GC{$seq_name}=$GC{$seq_name}/length($seq)*100;
 }
 
 while(<>){
@@ -28,5 +28,5 @@ while(<>){
 }
 GCpercent();
 for my $key (sort{$GC{$b} <=> $GC{$a} } keys %GC){
-    print "$key\t$GC{$key}\n";
+    print "$key\t$GC{$key} %\n";
 }
