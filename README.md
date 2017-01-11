@@ -11,3 +11,6 @@
 * Counting DNA Nucleotides
 * Finding a Motif in DNA
 * Consensus and Profile
+* Mortal Fibonacci Rabbits
+* Overlap Graphs
+* Calculating Expected Offspring
